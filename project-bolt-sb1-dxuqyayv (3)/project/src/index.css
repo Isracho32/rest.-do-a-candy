@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-cream-100 text-wood-800 font-sans antialiased;
+  min-height: 100dvh;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  .wood-panel {
+    background-image: url('/images/WhatsApp_Image_2026-03-28_at_9.39.05_PM.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wood-overlay {
+    background: linear-gradient(135deg, rgba(62,32,12,0.88) 0%, rgba(40,20,8,0.92) 100%);
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-cream-50 rounded-2xl border border-wood-200 shadow-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-ember-600 hover:bg-ember-700 text-white font-semibold px-5 py-3 rounded-xl transition-all shadow-sm text-sm;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border border-wood-300 text-wood-700 hover:bg-wood-100 font-medium px-5 py-3 rounded-xl transition-all text-sm;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 rounded-xl border border-wood-200 bg-white focus:outline-none focus:ring-2 focus:ring-ember-400/40 focus:border-ember-400 transition text-sm text-wood-900 placeholder:text-wood-400;
+  }
+
+  .section-title {
+    @apply font-serif text-2xl sm:text-3xl font-bold text-wood-900;
+  }
+}

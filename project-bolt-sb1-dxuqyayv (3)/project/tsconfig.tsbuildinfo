@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/Clock.tsx","./src/components/Employees.tsx","./src/components/Fines.tsx","./src/components/Holidays.tsx","./src/components/Reports.tsx","./src/components/Schedules.tsx","./src/lib/payroll.ts","./src/lib/supabase.ts"],"version":"5.9.3"}
